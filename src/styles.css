@@ -1,0 +1,72 @@
+.App {
+    display: flex;
+}
+
+.header {
+    width: 300px;
+    /* 사이드바 폭 늘림 */
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.header a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header a:hover {
+    background-color: #e9ecef;
+}
+
+.header a.active {
+    background-color: #495057;
+    color: #fff;
+}
+
+.header-title {
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* 세로 중앙정렬 */
+}
+
+
+.search-bar {
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #008000;
+}
+
+.search-button {
+    margin-left: 5px;
+    /* 검색창과 검색버튼 사이의 간격  */
+    padding: 5px 10px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #006600;
+}
+
+.header-item p {
+    font-weight: bold;
+    font-family: 'Arial Rounded MT', sans-serif;
+    margin-left: 30px;
+}
