@@ -6,7 +6,7 @@ import MapNavbar from "../components/map/MapNavbar";
 function Map() {
     const [place, setPlace] = useState(""); // place 상태 관리
     const [resultList, setResultList] = useState(null);
-    const [selectedCategory, setSelectedCategory] = useState('');
+    // const [selectedCategory, setSelectedCategory] = useState('');
 
     const updateResults = (newResults) => {
         setResultList(newResults);

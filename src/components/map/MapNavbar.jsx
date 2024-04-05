@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function MapNavbar({ setPlace }) { // setPlace prop 추가
+
     const handleSetPlace = (categoryCode) => {
+        //const [selectedCategory, setSelectedCategory] = useState('');
 
         setPlace(categoryCode);
-        setSelectedCategory(categoryCode);
+        //setSelectedCategory(categoryCode);
     };
 
     return (
@@ -12,6 +14,8 @@ export default function MapNavbar({ setPlace }) { // setPlace prop 추가
             <div className='flex justify-between items-center'>
                 <nav className='flex items-center gap-4 font-semibold'>
                     {/* 클릭 이벤트로 setPlace 함수 호출 */}
+
+
                     <button onClick={() => handleSetPlace('MT1')} className='hover:text-brand text-gray-600 py-2 text-sm'>
                         내 주변
                     </button>
